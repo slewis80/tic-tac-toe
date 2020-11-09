@@ -8,6 +8,7 @@
     background-position: center;
     background-attachment: fixed;
 }
+
 main {
     text-align: center;
 }
@@ -27,6 +28,7 @@ main {
     margin: 40px auto;
 }
 .cell {
+    text-align: center;
     font-family: 'Finger Paint', cursive;
     color: rgb(127, 179, 209);
     width: 100px;
@@ -43,12 +45,6 @@ main {
     padding: 5px;
 }
 
-.player {
-    font-family: 'Finger Paint', cursive;
-    color: rgb(127, 179, 209);
-    font-size: 40px;
-}
-
 .gameReset {
     font-family: 'Finger Paint', cursive;
     color: pink;
@@ -56,3 +52,17 @@ main {
     cursor: pointer;
     padding: 5px;
 }
+
+@media only screen and (max-width: 400px) {
+    .gameTitle {
+      font-size: 23px;
+    }
+    .gameContainer {
+        width: 233px;
+    }
+    .cell {
+        width: 75px;
+        height: 75px;
+        font-size: 45px;
+    }
+  }
